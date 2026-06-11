@@ -24,6 +24,7 @@
     <button class="tab active" data-tab="guide">Weekly Guide</button>
     <button class="tab" data-tab="scaffold">Student Evidence Scaffold</button>
     <button class="tab" data-tab="rubric">Success Criteria</button>
+    <button class="tab" data-tab="teacher">Teacher Answers 🔒</button>
   </nav>
 
   <main>
@@ -472,6 +473,202 @@ Response:
         </div>
       </section>
     </section>
+  
+<section id="teacher" class="tab-panel">
+  <section class="panel teacher-lock" id="teacherLock">
+    <h2>Teacher Answers 🔒</h2>
+    <p>This area is for teacher use only. Enter the PIN to view weekly answers, checkpoints and marking guidance.</p>
+    <div class="pin-row">
+      <input id="teacherPin" type="password" placeholder="Enter teacher PIN" />
+      <button id="unlockTeacher" class="primary">Unlock</button>
+    </div>
+    <p class="muted">Default PIN: <strong>Kings2026</strong>. Change this in <code>app.js</code> before deploying if required.</p>
+  </section>
+
+  <section class="panel teacher-content hidden" id="teacherContent">
+    <div class="scaffold-head">
+      <div>
+        <h2>Teacher Question-and-Answer Sheet</h2>
+        <p>Use this guide to support lesson delivery, benchmark checks and feedback in the Student Evidence App.</p>
+      </div>
+      <button id="lockTeacher" class="ghost">Lock teacher tab</button>
+    </div>
+
+    <div class="teacher-week">
+      <h3>Week 1 — Entry Event + Prosthetics Research</h3>
+      <h4>Task 1 Suggested Answers</h4>
+      <ol class="answer-list">
+        <li><strong>Which hand was damaged and how many fingers were damaged?</strong><br>Use the answer from the entry event video shown in class. Students should identify the specific hand and number of damaged fingers accurately from the source.</li>
+        <li><strong>When did the accident happen and what country was he in?</strong><br>Students should record the date/time period and country given in the video. Accept accurate paraphrasing if the answer is clearly sourced.</li>
+        <li><strong>What functionality did the prosthetic finger allow him to do again?</strong><br>It restored fine motor control and the ability to perform tasks requiring finger movement, especially piano playing or similar precise hand movement.</li>
+        <li><strong>What aspects of the prosthetic allowed him to forget about his disability?</strong><br>Comfort, natural movement, reliable control, realistic function, and the ability to complete meaningful everyday or musical tasks.</li>
+        <li><strong>What type of sensor allowed finger movement?</strong><br>Likely EMG/electromyography muscle sensors if the video refers to detecting muscle signals. Accept “muscle sensor” if used by the video.</li>
+        <li><strong>You need full __________ to play the piano.</strong><br>Likely “control”, “movement”, or “finger movement”, depending on the wording of the video.</li>
+        <li><strong>Why was machine learning needed?</strong><br>To interpret complex muscle/sensor signals and translate them into accurate, controlled finger movement.</li>
+        <li><strong>What song did the Grade 9 team create?</strong><br>Use the class project example shown to students. Accept the exact song used in your class demonstration.</li>
+        <li><strong>How many notes were needed?</strong><br>For the main project, students use three notes: C, D and E. Advanced teams may combine projects for six notes.</li>
+      </ol>
+      <h4>Teacher Checkpoints</h4>
+      <ul>
+        <li>Task 1 completed with answers in full sentences.</li>
+        <li>Task 2 includes six robotic/prosthetic hand examples.</li>
+        <li>Each image has four meaningful annotations.</li>
+        <li>Annotations refer to design features, not just labels.</li>
+      </ul>
+      <h4>Common Issues</h4>
+      <ul>
+        <li>Students paste images without sources.</li>
+        <li>Annotations describe appearance only, not function.</li>
+        <li>Students do not explain how research informs their own design.</li>
+      </ul>
+    </div>
+
+    <div class="teacher-week">
+      <h3>Week 2 — Fusion 360: Finger, Servo Mount and Assembly</h3>
+      <h4>Expected Evidence</h4>
+      <ul>
+        <li>Screenshot of robotic finger model.</li>
+        <li>Screenshot of servo mount model.</li>
+        <li>Screenshot of assembled finger, servo and mount.</li>
+        <li>Student name visible in the top-right of Fusion 360 screenshots.</li>
+      </ul>
+      <h4>Correct Understanding</h4>
+      <p>The robotic finger must be shaped to allow movement from the servo. The servo mount must hold the servo securely. The assembly should show how mechanical movement will transfer from the servo to the finger.</p>
+      <h4>Teacher Questions</h4>
+      <ul>
+        <li>How does your finger design allow movement?</li>
+        <li>How does the servo mount keep the motor stable?</li>
+        <li>What would happen if the servo was not fixed securely?</li>
+      </ul>
+      <h4>Benchmark Standard</h4>
+      <p>By the end of Week 2, students should have Part 1 complete and Tasks 3–5 substantially complete or ready for final screenshots.</p>
+    </div>
+
+    <div class="teacher-week">
+      <h3>Week 3 — Switch Mount Design</h3>
+      <h4>Expected Evidence</h4>
+      <ul>
+        <li>Team members recorded.</li>
+        <li>Switch mount sketch or screenshot.</li>
+        <li>Measurements included.</li>
+        <li>Design allows switch position adjustment.</li>
+        <li>Full digital assembly includes Arduino, servo-finger units and switch mounts.</li>
+      </ul>
+      <h4>Correct Understanding</h4>
+      <p>The switch mount must allow accurate alignment between finger movement and switch contact. A strong response explains measurement, adjustment, testing and refinement.</p>
+      <h4>Common Issues</h4>
+      <ul>
+        <li>Switch is fixed in one position with no adjustment.</li>
+        <li>Students model a mount but do not explain how it works.</li>
+        <li>Base layout does not leave enough space for Arduino, wires or fingers.</li>
+      </ul>
+    </div>
+
+    <div class="teacher-week">
+      <h3>Week 4 — Digital Manufacturing Preparation</h3>
+      <h4>Expected Evidence</h4>
+      <ul>
+        <li>Mount base with holes screenshot.</li>
+        <li>DXF export evidence for laser cutting.</li>
+        <li>Research explaining FDM 3D printing.</li>
+        <li>Research explaining CO₂ laser cutting.</li>
+      </ul>
+      <h4>Correct Answers</h4>
+      <p><strong>FDM 3D printing:</strong> A thermoplastic filament is heated and extruded layer by layer to form a 3D object.</p>
+      <p><strong>CO₂ laser cutting:</strong> A focused laser beam cuts or engraves sheet material by burning, melting or vaporising the material along a programmed path.</p>
+      <p><strong>DXF file:</strong> A 2D vector file used by CAD/CAM systems and laser cutters to define cut lines and shapes.</p>
+    </div>
+
+    <div class="teacher-week">
+      <h3>Week 5 — Manufacture + Servo Control</h3>
+      <h4>Expected Evidence</h4>
+      <ul>
+        <li>Laser cutting file submitted.</li>
+        <li>3D print file submitted.</li>
+        <li>Manufactured parts photographed.</li>
+        <li>Arduino connected and servo tested.</li>
+        <li>Servo horn alignment documented.</li>
+      </ul>
+      <h4>Correct Understanding</h4>
+      <p>A servo motor rotates to a controlled angle. Testing at 0°, 90° and 180° helps students understand range of movement. Zeroing places the servo in a known starting position before attaching the horn or finger mechanism.</p>
+      <h4>Common Troubleshooting</h4>
+      <ul>
+        <li>Servo does not move: check power, ground, signal pin and code upload.</li>
+        <li>Servo moves backwards: reverse angle values in code or reposition the horn.</li>
+        <li>Finger misses switch: adjust mount position or servo horn alignment.</li>
+      </ul>
+    </div>
+
+    <div class="teacher-week">
+      <h3>Week 6 — Servo Control + Build Refinement</h3>
+      <h4>Expected Evidence</h4>
+      <ul>
+        <li>Photo of zeroed finger position.</li>
+        <li>Explanation of Arduino as the control system.</li>
+        <li>Explanation of mechatronics: mechanical, electrical and software systems working together.</li>
+        <li>Refinement notes showing testing and adjustment.</li>
+      </ul>
+      <h4>Teacher Questions</h4>
+      <ul>
+        <li>What changed after testing?</li>
+        <li>Why was that change needed?</li>
+        <li>How does your evidence show improvement?</li>
+      </ul>
+    </div>
+
+    <div class="teacher-week">
+      <h3>Week 7 — Makey Makey + GarageBand Setup</h3>
+      <h4>Expected Evidence</h4>
+      <ul>
+        <li>Photo of Makey Makey wired to project.</li>
+        <li>GarageBand notes created: C, D and E for the three-finger version.</li>
+        <li>QwertyGo explanation.</li>
+        <li>Robot ready for music photo.</li>
+      </ul>
+      <h4>Correct Understanding</h4>
+      <p>The Makey Makey acts like a keyboard input device. When the robotic finger activates a switch, the circuit triggers a keyboard input. QwertyGo maps keyboard inputs to sound samples or notes, and GarageBand produces the musical sound.</p>
+    </div>
+
+    <div class="teacher-week">
+      <h3>Week 8 — Creating Music + Final Demonstration</h3>
+      <h4>Expected Evidence</h4>
+      <ul>
+        <li>Song name and note sequence.</li>
+        <li>Final MP4 video or link.</li>
+        <li>Minimum 20 finger strokes for the main performance.</li>
+        <li>Arduino code pasted into the student evidence response.</li>
+        <li>Evaluation against criteria for success.</li>
+      </ul>
+      <h4>High-Quality Student Response</h4>
+      <p>A strong response explains the relationship between design, manufacturing, electronics and programming. It uses specific evidence, such as screenshots, photos, code and testing notes, to justify how well the final robotic fingers met the success criteria.</p>
+    </div>
+
+    <div class="teacher-week">
+      <h3>Benchmark Marking Guide</h3>
+      <table class="teacher-table">
+        <thead><tr><th>Benchmark</th><th>Expected Evidence</th><th>Teacher Check</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Tasks 1–2</td><td>Entry answers, six research examples, annotations.</td></tr>
+          <tr><td>2</td><td>Part 1</td><td>Finger, servo mount and assembly screenshots.</td></tr>
+          <tr><td>3</td><td>Part 2</td><td>Switch mount, base and full assembly.</td></tr>
+          <tr><td>4</td><td>Manufacturing files</td><td>DXF and 3D print files ready.</td></tr>
+          <tr><td>5</td><td>Part 3</td><td>Manufacturing photos and machine explanations.</td></tr>
+          <tr><td>6</td><td>Part 4</td><td>Servo control, zeroing and alignment evidence.</td></tr>
+          <tr><td>7</td><td>Part 5</td><td>Makey Makey, GarageBand and QwertyGo setup.</td></tr>
+          <tr><td>8</td><td>Part 6</td><td>Final music performance, code and evaluation.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="teacher-week">
+      <h3>Suggested Feedback Comments</h3>
+      <p><strong>High:</strong> Your evidence clearly shows a well-developed robotic finger system. You explained design decisions, manufacturing processes, servo control and final testing with strong technical detail.</p>
+      <p><strong>Sound:</strong> Your project evidence shows a working understanding of the robotic fingers system. To improve, add more detail explaining why design changes were made and how testing improved the final solution.</p>
+      <p><strong>Developing:</strong> You have included some project evidence, but several sections need more explanation, screenshots or photos. Focus on explaining how each component works and how your team refined the design.</p>
+    </div>
+  </section>
+</section>
+
   </main>
 
   <template id="weekTemplate">

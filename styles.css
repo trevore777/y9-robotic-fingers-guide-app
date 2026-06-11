@@ -290,3 +290,62 @@ input[type="checkbox"] {
     margin-top: 12px;
   }
 }
+
+.hidden {
+  display: none !important;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.pin-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 18px 0;
+}
+
+.pin-row input {
+  min-width: 240px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font: inherit;
+}
+
+.teacher-week {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 18px;
+  margin: 18px 0;
+  background: #fbfdff;
+}
+
+.teacher-week h3 {
+  margin-top: 0;
+  color: #0f172a;
+}
+
+.answer-list li {
+  margin-bottom: 12px;
+}
+
+.teacher-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+.teacher-table th,
+.teacher-table td {
+  border: 1px solid var(--line);
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.teacher-table th {
+  background: #eff6ff;
+}

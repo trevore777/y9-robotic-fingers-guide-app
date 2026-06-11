@@ -387,3 +387,54 @@ document.getElementById("resetBtn").addEventListener("click", () => {
 renderEvidence();
 renderWeeks();
 updateProgress();
+
+
+async function sha256(text) {
+  const data = new TextEncoder().encode(text);
+  const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+  return Array.from(new Uint8Array(hashBuffer)).map(b => b.toString(16).padStart(2, "0")).join("");
+}
+
+const TEACHER_PIN_HASH = "ec335f47c14601f6765c609acbaf680ab2d297f9255be2a6c67346c9dfdf4d80";
+
+function setTeacherUnlocked(unlocked) {
+  const lockPanel = document.getElementById("teacherLock");
+  const contentPanel = document.getElementById("teacherContent");
+  if (!lockPanel || !contentPanel) return;
+
+  if (unlocked) {
+    sessionStorage.setItem("teacherUnlocked", "true");
+    lockPanel.classList.add("hidden");
+    contentPanel.classList.remove("hidden");
+  } else {
+    sessionStorage.removeItem("teacherUnlocked");
+    lockPanel.classList.remove("hidden");
+    contentPanel.classList.add("hidden");
+  }
+}
+
+document.getElementById("unlockTeacher")?.addEventListener("click", async () => {
+  const input = document.getElementById("teacherPin");
+  const entered = input.value.trim();
+  const enteredHash = await sha256(entered);
+
+  if (enteredHash === TEACHER_PIN_HASH) {
+    setTeacherUnlocked(true);
+    input.value = "";
+  } else {
+    alert("Incorrect PIN");
+    input.value = "";
+  }
+});
+
+document.getElementById("teacherPin")?.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    document.getElementById("unlockTeacher").click();
+  }
+});
+
+document.getElementById("lockTeacher")?.addEventListener("click", () => {
+  setTeacherUnlocked(false);
+});
+
+setTeacherUnlocked(sessionStorage.getItem("teacherUnlocked") === "true");

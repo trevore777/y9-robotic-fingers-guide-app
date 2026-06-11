@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Year 9 STEM Robotic Fingers Guide</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">Year 9 STEM · 8 Week Project Guide</p>
+      <h1>Robotic Fingers Student Guide</h1>
+      <p class="lede">Track lessons, benchmarks and evidence. Copy the scaffold into the Student Evidence App and complete it as you go.</p>
+    </div>
+    <div class="progress-card">
+      <span id="progressLabel">0% complete</span>
+      <div class="bar"><div id="progressBar"></div></div>
+      <button id="resetBtn" class="ghost">Reset progress</button>
+    </div>
+  </header>
+
+  <nav class="tabs">
+    <button class="tab active" data-tab="guide">Weekly Guide</button>
+    <button class="tab" data-tab="scaffold">Student Evidence Scaffold</button>
+    <button class="tab" data-tab="rubric">Success Criteria</button>
+  </nav>
+
+  <main>
+    <section id="guide" class="tab-panel active">
+      <section class="panel">
+        <h2>Project Goal</h2>
+        <p>Design, digitally manufacture, assemble and program a robotic finger system that can press switches and create music. Your folio must show research, CAD modelling, manufacturing evidence, servo control, Makey Makey setup, music creation, evaluation and clear project documentation.</p>
+        <div class="notice"><strong>Authenticity rule:</strong> CAD screenshots must show your name in the top-right corner of Fusion 360.</div>
+      </section>
+
+      <section class="grid">
+        <article class="panel">
+          <h2>Evidence Checklist</h2>
+          <ul id="evidenceList" class="checklist"></ul>
+        </article>
+        <article class="panel">
+          <h2>Benchmark Checkpoints</h2>
+          <ul class="benchmarks">
+            <li>Benchmark 1: Tasks 1–2 complete</li>
+            <li>Benchmark 2: Part 1 complete</li>
+            <li>Benchmark 3: Part 2 complete</li>
+            <li>Benchmark 4: manufacturing files ready</li>
+            <li>Benchmark 5: Part 3 complete</li>
+            <li>Benchmark 6: Part 4 complete</li>
+            <li>Benchmark 7: Part 5 complete</li>
+            <li>Benchmark 8: Part 6 and final evaluation complete</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="weeks">
+        <div class="section-title">
+          <h2>8 Week Lesson Guide</h2>
+          <p>Tick each lesson as you complete it. Progress is saved in this browser.</p>
+        </div>
+        <div id="weeks"></div>
+      </section>
+    </section>
+
+    <section id="scaffold" class="tab-panel">
+      <section class="panel scaffold-panel">
+        <div class="scaffold-head">
+          <div>
+            <h2>Student Evidence App Scaffold</h2>
+            <p>Students copy this into the Student Evidence App, then fill it in lesson-by-lesson with screenshots, photos, code and reflections.</p>
+          </div>
+          <button id="copyScaffold" class="primary">Copy full scaffold</button>
+        </div>
+        <textarea id="scaffoldText" spellcheck="false"># YEAR 9 STEM – ROBOTIC FINGERS PROJECT
+
+## Student Name
+Type your name here.
+
+## Team Members
+Type your team members here.
+
+## Project Overview
+Explain the purpose of the robotic fingers project. Include how prosthetics, robotics, digital manufacturing, Arduino control and music creation are connected.
+
+Response:
+
+---
+
+# PART 1 – INVESTIGATION
+
+## Task 1 – Entry Event Research
+
+### a. Which hand was damaged and how many fingers were damaged?
+Response:
+
+### b. When did the accident happen and what country was he in?
+Response:
+
+### c. What functionality did the prosthetic finger allow him to do again?
+Response:
+
+### d. What aspects of the prosthetic allowed him to forget about his disability?
+Response:
+
+### e. What type of sensor allowed finger movement?
+Response:
+
+### f. You need full __________ to play the piano.
+Response:
+
+### g. Machine learning was needed for what reason?
+Response:
+
+### h. What song did the Grade 9 team create with their robotic fingers?
+Response:
+
+### i. How many song notes were needed to play the song?
+Response:
+
+---
+
+# PART 2 – RESEARCH EXISTING ROBOTIC HANDS
+
+Research six examples of robotic hands or prosthetic hands. For each example, paste an image, include the source, and add four annotations explaining useful design features.
+
+## Example 1
+Image:
+Source:
+Annotation 1:
+Annotation 2:
+Annotation 3:
+Annotation 4:
+
+## Example 2
+Image:
+Source:
+Annotation 1:
+Annotation 2:
+Annotation 3:
+Annotation 4:
+
+## Example 3
+Image:
+Source:
+Annotation 1:
+Annotation 2:
+Annotation 3:
+Annotation 4:
+
+## Example 4
+Image:
+Source:
+Annotation 1:
+Annotation 2:
+Annotation 3:
+Annotation 4:
+
+## Example 5
+Image:
+Source:
+Annotation 1:
+Annotation 2:
+Annotation 3:
+Annotation 4:
+
+## Example 6
+Image:
+Source:
+Annotation 1:
+Annotation 2:
+Annotation 3:
+Annotation 4:
+
+## Design Reflection
+What design features from your research could improve your own robotic fingers project?
+
+Response:
+
+---
+
+# PART 3 – DESIGN AND MODELLING
+
+## Task 3 – Robotic Finger Model
+Paste screenshot:
+
+Explain your design decisions:
+
+What challenge did you encounter?
+
+How did you solve it?
+
+## Task 4 – Servo Mount
+Paste screenshot:
+
+Explain how the servo mount works:
+
+Why is the servo mount important?
+
+## Task 5 – Finger, Servo and Mount Assembly
+Paste screenshot:
+
+Explain how the parts work together:
+
+Evaluate how effectively the assembly meets the project purpose:
+
+---
+
+# PART 4 – TEAM DESIGN
+
+## Team Planning
+Team Member 1:
+Team Member 2:
+
+Team roles:
+
+## Task 6 – Switch Mount Design
+Paste sketch or screenshot:
+
+Measurements:
+
+Design rationale:
+
+How can the switch position be adjusted?
+
+What improvement did your team make after discussion or testing?
+
+## Task 7 – Mount Base Design
+Paste screenshot:
+
+Explain how the base supports the Arduino, servo-finger units and switch mounts:
+
+## Task 8 – Full Assembly
+Paste screenshot:
+
+Explain how all components connect:
+
+Evaluate the alignment between fingers and switches:
+
+---
+
+# PART 5 – DIGITAL MANUFACTURING
+
+## Task 9 – Mount Base with Holes and DXF File
+Paste screenshot:
+
+Why is a DXF file needed for laser cutting?
+
+## Task 10 – Manufactured Components
+Paste photos of:
+1. Servo-finger mount
+2. Switch mount
+3. Mount base
+
+Reflection: What did you learn while manufacturing these parts?
+
+## Task 11 – Manufacturing Machines
+
+### FDM 3D Printing
+Explain how FDM 3D printing works:
+
+Advantages:
+1.
+2.
+3.
+
+Limitations:
+1.
+2.
+3.
+
+### CO2 Laser Cutting
+Explain how CO2 laser cutting works:
+
+Advantages:
+1.
+2.
+3.
+
+Limitations:
+1.
+2.
+3.
+
+## Task 12 – Manufacturing Process Photos
+
+### 3D Printing Photo
+Paste photo:
+
+Annotation 1:
+Annotation 2:
+Annotation 3:
+Annotation 4:
+
+### Laser Cutting Photo
+Paste photo:
+
+Annotation 1:
+Annotation 2:
+Annotation 3:
+Annotation 4:
+
+## Task 13 – Completed Robotic Finger Project
+Paste six photos of the completed project.
+
+Photo 1 explanation:
+Photo 2 explanation:
+Photo 3 explanation:
+Photo 4 explanation:
+Photo 5 explanation:
+Photo 6 explanation:
+
+Explain the purpose of each major component:
+
+How do the switches align with the fingers?
+
+What mechanism did your team use to achieve alignment?
+
+---
+
+# PART 6 – SERVO CONTROL
+
+## Task 14 – Mechatronics
+Explain what mechatronics means:
+
+Mechanical engineering evidence:
+
+Electrical engineering evidence:
+
+Software engineering evidence:
+
+## Task 15 – Arduino UNO R3
+What is the role of the Arduino UNO R3?
+
+Why is Arduino described as the brain of the project?
+
+## Task 16 – Servo Motors
+What is a servo motor?
+
+Why do the servos need to be tested and zeroed?
+
+## Task 17 – Servo Testing
+Paste photo of testing:
+
+What code did you use?
+
+What happened during testing?
+
+What adjustment was needed?
+
+## Task 18 – Zeroed Position
+Paste photo:
+
+How accurately are the fingers aligned?
+
+What still needs to be improved?
+
+---
+
+# PART 7 – MAKEY MAKEY AND MUSIC SETUP
+
+## Task 19 – Makey Makey Board
+Paste photo of completed wiring:
+
+Explain how the Makey Makey board connects the robot to the computer:
+
+## Task 20 – GarageBand
+List the three notes your team created:
+1.
+2.
+3.
+
+Why were these notes selected?
+
+## Task 21 – QwertyGo
+Explain the purpose of QwertyGo:
+
+How does QwertyGo help connect the Makey Makey board to the music?
+
+---
+
+# PART 8 – CREATING MUSIC
+
+## Task 22 – Music Planning
+Song name:
+
+Sequence of notes:
+
+How will the robot play the sequence?
+
+## Task 23 – Final Three-Finger Performance
+Paste MP4 video or link:
+
+Paste Arduino code:
+
+How many finger strokes were included?
+
+Did the robot perform as expected?
+
+## Task 24 – Advanced Collaboration
+If combining two robotic finger projects, explain how the two systems were connected:
+
+## Task 25 – Musical Masterpiece
+Paste final video or link:
+
+Paste final Arduino code:
+
+Evaluate the final musical performance:
+
+---
+
+# FINAL EVALUATION
+
+## Criteria for Success
+Complete the table.
+
+| Criteria | Rating 1–5 | Evidence |
+|---|---:|---|
+| Finger movement reliability | | |
+| Switch alignment | | |
+| Manufacturing quality | | |
+| Arduino programming success | | |
+| Makey Makey connection | | |
+| Music performance | | |
+| Team collaboration | | |
+
+## Final Reflection
+
+### What worked well?
+Response:
+
+### What challenges did your team overcome?
+Response:
+
+### What would you improve next time?
+Response:
+
+### How does this project demonstrate STEM?
+Response:
+
+### How did your team use design decisions to improve the final solution?
+Response:
+
+### What evidence best shows the quality of your final project?
+Response:
+</textarea>
+      </section>
+    </section>
+
+    <section id="rubric" class="tab-panel">
+      <section class="panel">
+        <h2>Success Criteria</h2>
+        <ul>
+          <li>Research explains how prosthetics and robotic hands restore function.</li>
+          <li>CAD screenshots show accurate modelling and the student name visible in Fusion 360.</li>
+          <li>The switch mount can be adjusted to align with the robotic finger movement.</li>
+          <li>Manufactured parts are safely and accurately produced using 3D printing and laser cutting.</li>
+          <li>Arduino servos are tested, zeroed and aligned correctly.</li>
+          <li>Makey Makey, GarageBand and QwertyGo are connected to produce music.</li>
+          <li>The final video demonstrates at least 20 finger strokes.</li>
+          <li>The final evaluation uses evidence and explains improvements.</li>
+        </ul>
+      </section>
+
+      <section class="panel">
+        <h2>Reflection Prompts</h2>
+        <div class="prompt-grid">
+          <div><h3>Investigating</h3><p>What design features from real prosthetics influenced your robotic finger design?</p></div>
+          <div><h3>Generating</h3><p>How did your team improve the switch mount or base design after testing?</p></div>
+          <div><h3>Producing</h3><p>What tools, machines and safety practices did you use to produce the components?</p></div>
+          <div><h3>Evaluating</h3><p>How well did the final robotic fingers meet your success criteria?</p></div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <template id="weekTemplate">
+    <article class="week-card">
+      <button class="week-head" type="button">
+        <span class="week-pill"></span>
+        <span class="week-title"></span>
+        <span class="chev">⌄</span>
+      </button>
+      <div class="week-body">
+        <p class="focus"></p>
+        <p class="benchmark"></p>
+        <p class="tasks"></p>
+        <div class="lesson-list"></div>
+      </div>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>

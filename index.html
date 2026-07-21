@@ -22,6 +22,7 @@
 
   <nav class="tabs">
     <button class="tab active" data-tab="guide">Weekly Guide</button>
+    <button class="tab" data-tab="learning">Learning Spaces</button>
     <button class="tab" data-tab="scaffold">Student Evidence Scaffold</button>
     <button class="tab" data-tab="rubric">Success Criteria</button>
     <button class="tab" data-tab="teacher">Teacher Answers 🔒</button>
@@ -62,6 +63,25 @@
         </div>
         <div id="weeks"></div>
       </section>
+    </section>
+
+
+    <section id="learning" class="tab-panel">
+      <section class="panel">
+        <div class="learning-hero">
+          <div>
+            <p class="eyebrow dark">GUIDED LEARNING + ASSESSMENT EVIDENCE</p>
+            <h2>Robotic Fingers Learning Spaces</h2>
+            <p>Complete two guided Learning Spaces each project week. Each space follows <strong>Watch → Learn → Think → Make/Test → AI Coach → My Evidence → Save</strong>.</p>
+          </div>
+          <div class="evidence-actions">
+            <button id="exportEvidence" class="primary">Export My Evidence</button>
+            <button id="clearLearning" class="ghost">Clear Learning Space responses</button>
+          </div>
+        </div>
+        <div class="notice"><strong>AI rule:</strong> AI is a coach, not the author. Use it to understand concepts, ask questions and improve your draft. Your saved assessment evidence must be your own final response and AI/help must be declared.</div>
+      </section>
+      <div id="learningSpaces" class="learning-spaces"></div>
     </section>
 
     <section id="scaffold" class="tab-panel">

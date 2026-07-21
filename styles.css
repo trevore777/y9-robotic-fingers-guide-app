@@ -349,3 +349,25 @@ input[type="checkbox"] {
 .teacher-table th {
   background: #eff6ff;
 }
+
+/* Learning Spaces */
+.eyebrow.dark{color:var(--accent-2);opacity:1}
+.learning-hero,.learning-card-head,.video-box,.save-row{display:flex;justify-content:space-between;gap:18px;align-items:center}
+.evidence-actions,.coach-buttons{display:flex;gap:10px;flex-wrap:wrap}
+.learning-spaces{width:min(1180px,calc(100% - 32px));margin:22px auto 60px}
+.learning-card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px;margin:22px 0;box-shadow:0 16px 40px rgba(15,23,42,.06)}
+.learning-card-head h2{margin:8px 0}
+.status-chip{white-space:nowrap;background:#ecfdf5;color:#065f46;padding:8px 12px;border-radius:999px;font-weight:800}
+.learning-flow{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
+.learning-flow span{font-size:.76rem;font-weight:900;letter-spacing:.04em;background:#eff6ff;padding:7px 10px;border-radius:999px}
+.video-box,.ai-coach,.evidence-editor{border:1px solid var(--line);border-radius:18px;padding:18px;margin:18px 0;background:#fbfdff}
+.link-btn{text-decoration:none;display:inline-block;white-space:nowrap}
+.two-col{display:grid;grid-template-columns:.8fr 1.2fr;gap:20px}
+.question-block{display:block;margin:12px 0}
+.question-block textarea,.evidence-editor textarea,.coach-output{width:100%;min-height:82px;margin-top:8px;padding:12px;border:1px solid var(--line);border-radius:12px;font:inherit;resize:vertical;background:white}
+.main-evidence{min-height:180px!important}
+.coach-buttons button{border:1px solid var(--line);background:white;padding:10px 13px;border-radius:999px;cursor:pointer;font-weight:700}
+.upload-label{display:flex;flex-direction:column;gap:7px;margin:16px 0;padding:14px;border:1px dashed var(--line);border-radius:14px}
+.image-preview img{max-width:100%;max-height:380px;border-radius:14px;border:1px solid var(--line);margin:10px 0}
+.save-row{margin-top:16px}
+@media(max-width:850px){.learning-hero,.learning-card-head,.video-box,.save-row{align-items:stretch;flex-direction:column}.two-col{grid-template-columns:1fr}}

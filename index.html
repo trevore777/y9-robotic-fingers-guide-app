@@ -22,6 +22,7 @@
 
   <nav class="tabs">
     <button class="tab active" data-tab="guide">Weekly Guide</button>
+    <button class="tab" data-tab="fusionmac">Install Fusion 360 — Mac</button>
     <button class="tab" data-tab="learning">Learning Spaces</button>
     <button class="tab" data-tab="scaffold">Student Evidence Scaffold</button>
     <button class="tab" data-tab="rubric">Success Criteria</button>
@@ -65,6 +66,100 @@
       </section>
     </section>
 
+
+
+    <section id="fusionmac" class="tab-panel">
+      <section class="panel fusion-install">
+        <p class="eyebrow dark">BEFORE YOU START</p>
+        <h2>Install Autodesk Fusion on a Mac</h2>
+        <p class="lead">Follow this tutorial before beginning the Robotic Fingers CAD lessons. Use your school-approved Autodesk Education account process. Do not choose a paid commercial subscription unless your teacher specifically instructs you to.</p>
+
+        <div class="notice"><strong>Important:</strong> Autodesk screens and eligibility steps can change. If your screen looks different, stop and ask your teacher rather than entering payment details.</div>
+
+        <div class="install-step">
+          <div class="step-number">1</div>
+          <div><h3>Check your Mac and school instructions</h3>
+          <p>Make sure you have internet access and permission to install software. If your Mac is managed by your school, Autodesk Fusion may already be available through the school's software/self-service system.</p>
+          <label class="install-check"><input type="checkbox" data-fusion-check="1"> I have checked whether Fusion is already installed or available through school Self Service.</label></div>
+        </div>
+
+        <div class="install-step">
+          <div class="step-number">2</div>
+          <div><h3>Open Autodesk Education</h3>
+          <p>Use Autodesk's official Education page for Fusion. Sign in or create an Autodesk account using the process approved by your school.</p>
+          <a class="primary link-btn" href="https://www.autodesk.com/education/edu-software/fusion" target="_blank" rel="noopener">Open Autodesk Education — Fusion ↗</a>
+          <label class="install-check"><input type="checkbox" data-fusion-check="2"> I opened the official Autodesk Education page.</label></div>
+        </div>
+
+        <div class="install-step">
+          <div class="step-number">3</div>
+          <div><h3>Sign in and confirm education access</h3>
+          <p>Sign in with your Autodesk account. Follow Autodesk's education eligibility prompts if they appear. Use accurate school and student information. Ask your teacher if you are unsure which email or school details to use.</p>
+          <div class="warning-box"><strong>Do not enter payment details</strong> for this class installation unless your teacher/school has specifically instructed you to do so.</div>
+          <label class="install-check"><input type="checkbox" data-fusion-check="3"> I can sign in and have followed the required education-access steps.</label></div>
+        </div>
+
+        <div class="install-step">
+          <div class="step-number">4</div>
+          <div><h3>Download Fusion for macOS</h3>
+          <p>From the Autodesk Education/Fusion download area, choose the macOS version when prompted. The installer will normally appear in your <strong>Downloads</strong> folder.</p>
+          <label class="install-check"><input type="checkbox" data-fusion-check="4"> The Fusion installer has downloaded to my Mac.</label></div>
+        </div>
+
+        <div class="install-step">
+          <div class="step-number">5</div>
+          <div><h3>Run the installer</h3>
+          <p>Open <strong>Finder → Downloads</strong>, open the Autodesk Fusion installer, and follow the on-screen installation instructions. macOS may ask for permission or an administrator password on managed devices.</p>
+          <p>If installation is blocked, do not try to bypass school security settings. Ask your teacher or IT support.</p>
+          <label class="install-check"><input type="checkbox" data-fusion-check="5"> Fusion finished installing successfully.</label></div>
+        </div>
+
+        <div class="install-step">
+          <div class="step-number">6</div>
+          <div><h3>Open Fusion and sign in</h3>
+          <p>Open <strong>Autodesk Fusion</strong> from Applications or Spotlight Search. Sign in using the same Autodesk account used for education access. Allow the application to complete any first-launch setup or updates.</p>
+          <label class="install-check"><input type="checkbox" data-fusion-check="6"> Fusion opens and I can access the Design workspace.</label></div>
+        </div>
+
+        <div class="install-step">
+          <div class="step-number">7</div>
+          <div><h3>Complete the 5-minute installation test</h3>
+          <ol>
+            <li>Create a <strong>New Design</strong>.</li>
+            <li>Start a sketch on a flat plane.</li>
+            <li>Draw a rectangle.</li>
+            <li>Finish the sketch.</li>
+            <li>Extrude the rectangle to make a simple 3D block.</li>
+            <li>Save the design as <strong>Fusion Installation Test – Your Name</strong>.</li>
+          </ol>
+          <label class="install-check"><input type="checkbox" data-fusion-check="7"> I created, extruded and saved my test model.</label></div>
+        </div>
+
+        <div class="install-step">
+          <div class="step-number">8</div>
+          <div><h3>Show your teacher</h3>
+          <p>Show your saved 3D test model to your teacher. Once checked, you are ready to begin the Robotic Fingers Fusion 360 modelling lessons.</p>
+          <label class="install-check"><input type="checkbox" data-fusion-check="8"> My installation test is complete.</label></div>
+        </div>
+
+        <div class="fusion-progress-card">
+          <div><strong>Installation progress</strong><p id="fusionProgressText">0 of 8 steps complete</p></div>
+          <div class="fusion-progress"><span id="fusionProgressBar"></span></div>
+          <button id="resetFusionInstall" class="ghost">Reset checklist</button>
+        </div>
+
+        <details class="troubleshooting">
+          <summary>Troubleshooting on Mac</summary>
+          <div class="details-body">
+            <p><strong>Fusion is already installed:</strong> Open it and sign in, then complete Step 7.</p>
+            <p><strong>I cannot install software:</strong> Your Mac may be school-managed. Check Self Service or ask your teacher/IT support.</p>
+            <p><strong>I cannot sign in:</strong> Check that you are using the correct Autodesk account and internet connection. Do not create multiple accounts unless instructed.</p>
+            <p><strong>Education access is asking for verification:</strong> Follow Autodesk's current instructions and ask your teacher if you are unsure what school information to provide.</p>
+            <p><strong>The screen does not match this tutorial:</strong> Autodesk occasionally changes its website and installer. Use the official Autodesk Education page and ask your teacher before proceeding if anything is unclear.</p>
+          </div>
+        </details>
+      </section>
+    </section>
 
     <section id="learning" class="tab-panel">
       <section class="panel">

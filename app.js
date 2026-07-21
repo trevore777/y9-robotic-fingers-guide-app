@@ -503,3 +503,29 @@ document.getElementById("exportEvidence")?.addEventListener("click",()=>{
  const blob=new Blob([JSON.stringify(payload,null,2)],{type:"application/json"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="robotic-fingers-student-evidence.json";a.click();URL.revokeObjectURL(a.href);
 });
 document.getElementById("clearLearning")?.addEventListener("click",()=>{if(confirm("Clear all Learning Space answers and uploaded evidence from this browser?")){localStorage.removeItem(learningKey);location.reload();}});
+
+
+
+// Mac Autodesk Fusion installation checklist
+const fusionInstallKey="y9RoboticFingersFusionMacInstall";
+const fusionChecks=[...document.querySelectorAll("[data-fusion-check]")];
+let fusionState=JSON.parse(localStorage.getItem(fusionInstallKey)||"{}");
+function updateFusionProgress(){
+  fusionChecks.forEach(c=>c.checked=!!fusionState[c.dataset.fusionCheck]);
+  const done=fusionChecks.filter(c=>c.checked).length;
+  const text=document.getElementById("fusionProgressText");
+  const bar=document.getElementById("fusionProgressBar");
+  if(text) text.textContent=`${done} of ${fusionChecks.length} steps complete${done===fusionChecks.length?" — Ready for Robotic Fingers CAD ✓":""}`;
+  if(bar) bar.style.width=`${fusionChecks.length?done/fusionChecks.length*100:0}%`;
+}
+fusionChecks.forEach(c=>c.addEventListener("change",()=>{
+  fusionState[c.dataset.fusionCheck]=c.checked;
+  localStorage.setItem(fusionInstallKey,JSON.stringify(fusionState));
+  updateFusionProgress();
+}));
+document.getElementById("resetFusionInstall")?.addEventListener("click",()=>{
+  if(confirm("Reset the Fusion installation checklist?")){
+    localStorage.removeItem(fusionInstallKey); fusionState={}; updateFusionProgress();
+  }
+});
+updateFusionProgress();
